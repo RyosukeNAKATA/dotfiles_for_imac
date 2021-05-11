@@ -1,9 +1,6 @@
 # ビープ音を消す
 setopt nolistbeep
-# zsh-completions(補完機能)の設定
-if [ -e /usr/local/share/zsh-completions ]; then
-    fpath=(/usr/local/share/zsh-completions $fpath)
-fi
+# 補完機能を有効化
 autoload -U compinit
 compinit -u
 # カラーを追加
