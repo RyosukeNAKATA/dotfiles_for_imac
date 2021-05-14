@@ -80,7 +80,7 @@ set nofoldenable
 " タイトルを表示
 set title
 " 行番号の表示
-set number
+set relativenumber
 " ヤンクでクリップボードにコピー
 set clipboard=unnamed,autoselect
 " Escの2回押しでハイライト消去
@@ -93,6 +93,9 @@ set nrformats=
 set whichwrap=b,s,h,l,<,>,[,],~
 " バッファスクロール
 set mouse=a
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,cp932,euc-jp
 
 " auto reload .vimrc
 augroup source-vimrc
