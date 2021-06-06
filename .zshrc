@@ -10,6 +10,6 @@ colors
 PROMPT='%F{2}%~%f %F{6}$%f '
 # general use ######################################################################################
 alias vi='vim'
-alias ls='ls -G'
-alias ll='ls -l'
-alias lla='ls -la'
+alias ls='ls -GF'
+alias ll='ls -lF'
+alias lla='ls -laF'
