@@ -1,1 +1,1 @@
-# dotfiles_for_imac
+# dotfiles_general
