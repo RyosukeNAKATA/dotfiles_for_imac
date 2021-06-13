@@ -1,3 +1,6 @@
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
 set nowritebackup
 set nobackup
 set virtualedit=block
@@ -19,7 +22,8 @@ set laststatus=2
 set showcmd
 set display=lastline
 set list
-set listchars=tab:^\ ,trail:~
+set listchars=tab:»-,nbsp:¬,extends:»,precedes:«,trail:•,eol:↲
+set cursorline
 set history=10000
 hi Comment ctermfg=3
 set expandtab
