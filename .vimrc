@@ -1,4 +1,5 @@
-set encoding=utf-8
+let $LANG='en_US.UTF-8'
+set encoding=UTF-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
 set nowritebackup
@@ -22,14 +23,13 @@ set laststatus=2
 set showcmd
 set display=lastline
 set list
-set listchars=tab:»-,nbsp:¬,extends:»,precedes:«,trail:•,eol:↲
 set cursorline
 set history=10000
 hi Comment ctermfg=3
 set expandtab
 set shiftwidth=4
 set softtabstop=2
-set tabstop=2
+set tabstop=4
 set guioptions-=T
 set guioptions+=a
 set guioptions+=R
@@ -45,9 +45,10 @@ syntax on
 set nrformats=
 set whichwrap=b,s,h,l,<,>,[,],~
 set mouse=a
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8,cp932,euc-jp
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
 
 augroup source-vimrc
   autocmd!
