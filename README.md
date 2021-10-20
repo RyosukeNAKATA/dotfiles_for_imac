@@ -1,1 +1,1 @@
-# dotfiles_general
+# コピペ用
